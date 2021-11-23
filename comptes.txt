@@ -1,0 +1,21 @@
+UUUU66UUUUUU455.000000
+ cin :AZ33
+ nom :DDDD/n entrez nomZZZZ
+ monta:33.000000
+ cin :SH193097
+ nom :ABOUELHAITAM/n entrez nomOUMAIMA
+ monta:20000.000000
+ entrez la CIN :SH1234
+ entrer le nom :BAHASSANE/n entrez nomDOUNIA
+ monta:30000.000000
+ entrez la CIN :SH12345
+ entrer le nom :KJHF/n entrez nom :HGSDJD
+ monta:134425.000000.2
+ entrez la CIN :SH1234
+ entrer le nom :SAAD
+ entrez nom :AHMAD
+ montant:12345.000000.2
+ entrez la CIN :SDF131414
+ entrer le nom :SFS
+ entrez nom :SFSFS
+ montant:0.000000.2 SH1234 BAHASSANE DOUNIA 30000.000000 
