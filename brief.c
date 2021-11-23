@@ -15,34 +15,31 @@ struct Comptebancaire compte;
         void creercompte(){
         FILE * C;
         C=fopen("comptes.txt","a");
-        printf("entrez votre CIN :");
-        scanf("%s", &compte.CIN);
-        fprintf(C," %s \n",compte.CIN);
+        
+        printf("entrez votre CIN :\n");
+        scanf("%s \t", &compte.CIN);
+        fprintf(C," %s \t",compte.CIN);
         fflush(stdin);
        
-        printf("entrez votre nom :");
-        scanf("%s",&compte.Nom);
-        fprintf(C," \n %s \n ",compte.Nom);
+        printf("entrez votre nom :\n");
+        scanf("%s \t",&compte.Nom);
+        fprintf(C," \n %s \t ",compte.Nom);
         fflush(stdin);
-         printf("entrez prenom :");
-        scanf("%s", &compte.Prenom);
-        fprintf(C,"\n %s \n",compte.Prenom);
+         printf("entrez prenom : \t");
+        scanf("%s \t", &compte.Prenom);
+        fprintf(C,"\n %s \t",compte.Prenom);
         fflush(stdin);
 
-        printf("entrez montant :");
-        scanf("%f",&compte.Montant);
-        fprintf(C,"\n %f \n",compte.Montant);
+        printf("entrez montant :\n");
+        scanf("%f \t",&compte.Montant);
+        fprintf(C,"\n %f \t",compte.Montant);
         fflush(stdin);
         fclose(C);
         printf("compte bien cree");
         }
-
-
-       void AfficherCompte(){
-        FILE * C;
-        C=fopen("comptes.txt","r");
-
-      
+    void AfficherCompte(){
+    FILE * C;
+    C=fopen("comptes.txt","r");
     do{
 printf("\n=======INFOS SUR LE COMPTE======= \n");
 fscanf(C," %s ",&compte.CIN);
@@ -55,64 +52,41 @@ fscanf(C," %s ",&compte.Prenom);
 printf("Prénom de client :%s\n",compte.Prenom);
 fflush(stdin);
 fscanf(C," %f ",&compte.Montant);
-printf("MONTANT DE COMPTE:%f Dh\n.",compte.Montant );
+printf("Montant DE COMPTE:%f Dh\n.",compte.Montant );
 fflush(stdin);}
 while (!feof(C));
-fclose(C);}
-
-void rechercher(){
-char Numrech;
-FILE * C;
-C =fopen("comptes.txt","a");
-printf("donner un numero de recherche :");
-
-do {
-
-    if (compte.CIN==Numrech){
-fscanf(C,"%s ,%s , %s , %f", &compte.CIN, &compte.Nom, &compte.Prenom, &compte.Montant);
-fflush(stdin);
-
-printf("CIN\t: %s" ,compte.CIN);
-printf("CIN\t: %s", compte.Nom);
-printf("CIN\t: %s", compte.Prenom);
-printf("CIN\t: %f", compte.Montant);
-}while (!feof(C));
 fclose(C);
 }
-}
+void RechercherCompte(){
+  char CIN_RECH[40];
+   FILE * C;
+   C = fopen ("comptes.txt", "w+");
+    printf("donnez CIN a rechercher :");
+  scanf("%s",CIN_RECH);
+  fscanf(C, "%s %s %s %f", compte.CIN, compte.Nom, compte.Prenom,compte.Montant);
+   if (strcmp(compte.CIN,CIN_RECH) == 0){
+   rewind(C);
+   printf("CIN DE CLIENT :%s\n", compte.CIN );
+   printf("nom de client : %s\n", compte.Nom );
+   printf("Prenom : %s\n", compte.Prenom );
+   printf("Solde : %f dh\n",compte.Montant );
 
-void supprimer(){
-char CIN_RECH;
-FILE * C;
-C =fopen("comptes.txt","a");
-printf("\n\n\n\tEntrez le CIN du client a effacer: ");
-scanf("%s",CIN); 
-
-if(CIN_RECH==CIN)
-{
-printf("\tLe fichier n'exiqte pas!!!\n",CIN_RECH);
-}
-else
-{
-printf("\n\tLe compte de %s  est bien efface.\n",CIN_RECH);
-}
-break;
-
-}
+   fclose(C);
+   }
 }
 int main(){
-char choix ;
+int choix ;
 char qus;
 do{
 system("cls");
-printf("\n Menu \n");
-printf("1 Ajouter un nouveau compte");
-printf("\n 2 Affichage des comptes");
-printf("\n 3.Rechercher");
-printf("\n 4. Supprimer");
+printf("MENU \n");
+printf("1.pour ajouter");
+printf("\n 2.pour afficher");
+printf("\n 3.pour cherch");
+printf("\n 4.pour supprime");
 printf("\n 5.Quitter");
 do{
-printf("\n Entrez votre choix:\t");
+printf("\n entrez votre choix: \t");
 scanf("%d",&choix);
 }while(choix<1 || choix>5);
 switch(choix){
@@ -123,17 +97,14 @@ case 2:
 AfficherCompte();
 break;
 case 3:
-rechercher();
+RechercherCompte();
 break;
-case 3:
-supprimer();
-break;
-
 }
-
-printf("\n continuez ");
+printf("00 : menu \n");
+printf("0 : sortir");
 scanf("%s",&qus);
 fflush(stdin);
-}while (qus=='o' || qus=='O' );
+}
+while (qus=='0');
 return 0 ;
 }
