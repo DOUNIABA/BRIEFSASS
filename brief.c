@@ -65,12 +65,12 @@ char Numrech;
 FILE * C;
 C =fopen("comptes.txt","a");
 printf("donner un num de recherche :");
-if (compte.CIN==Numrech){
+
 
 do {
 fscanf(C,"%s ,%s , %s , %f", &compte.CIN, &compte.Nom, &compte.Prenom, &compte.Montant);
 fflush(stdin);
-
+if (compte.CIN==Numrech){
 printf("CIN\t: %s" ,compte.CIN);
 printf("CIN\t: %s", compte.Nom);
 printf("CIN\t: %s", compte.Prenom);
@@ -106,9 +106,7 @@ break;
 case 3:
 rechercher();
 break;
-case 4:
-Supprimer(); 
-break;
+
 }
 
 printf("\n continuez O/N?");
