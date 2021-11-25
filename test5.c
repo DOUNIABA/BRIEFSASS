@@ -8,7 +8,6 @@ char nom[100];
 char prenom[100];
 float montant;
 };
- struct  Comptebancaire compt1;
   struct  Comptebancaire compt[100];
    int i ;
    int p=0;
@@ -48,9 +47,10 @@ save();
 p++;
 }
 
-  void RechercherCompte(){
-    
-    char cin[20];
+  void RechercherCompte()
+{
+
+      char cin[20];
     int i;
     printf("Enter CIN: ");
     scanf("%s",cin);
@@ -65,21 +65,8 @@ p++;
     }
     
     }
-}
-float montant(){
-   char cin[20];
-  
-    printf("Enter CIN: ");
-    scanf("%s",cin);
+    }  
 
-    for(i=0; i<p; i++){
-    if(strcmp(compt[i].CIN,cin)==1){
-       
-return  compt[i].montant;
-    }
-    return 0;
-    }
-}
 
 
   void RETRAIT_DEPOT(){
@@ -103,7 +90,7 @@ printf(" le retrait est:%f Dh\n.",compt[i].montant - montant );
 
 }else {
  printf("choix incorrect" );
- break;
+ 
  
 }
 
@@ -135,8 +122,8 @@ printf("\n _________________MENU______________________\n");
 printf("\n 1. ajouter un compte");
 printf("\n 2. Rechercher compte");
 printf("\n 3. afficher");
-printf("\n 4.Retrait/Depot");
-printf("\n 5.QUITTER");
+printf("\n 4.montant()");
+printf("\n 5.retrait_depot");
 do{
 printf("\n entre votre choix :")
 ;
@@ -147,24 +134,23 @@ switch(ops){
 case 1:
 Ajouter();
 break;
+
 case 2:
 RechercherCompte();
-
 break;
+
 case 3:
 afficher();
 break;
+
 case 4:
 
 break;
+
 case 5:
-RechercherCompte();
-
-break;
-case 6:
+RETRAIT_DEPOT();
 break;
 
- 
 
 }
 }while(ops<1 || ops>6);

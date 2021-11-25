@@ -14,3 +14,78 @@ CIN               :aAZ2341
 LE NOM EST       :HSFS
 PRENOM DE CLIENT :LKSJD
 SOLDE DE CLIENT  :345617.000000
+==================
+CIN               :ML1423
+LE NOM EST       :IUREY
+PRENOM DE CLIENT :LKNKF?
+SOLDE DE CLIENT  :0.000000
+==================
+CIN               :QS1234
+LE NOM EST       :JHDFK
+PRENOM DE CLIENT :ZEIRLJF
+SOLDE DE CLIENT  :152473.000000
+==================
+CIN               :SQ
+LE NOM EST       :SS
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :SQ
+LE NOM EST       :SS
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :QS
+LE NOM EST       :QS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :121.000000
+==================
+CIN               :QS
+LE NOM EST       :QS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :121.000000
+==================
+CIN               :QS
+LE NOM EST       :QS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :121.000000
+==================
+CIN               :SS
+LE NOM EST       :SS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :SS
+LE NOM EST       :SS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :==================
+LE NOM EST       :Le
+PRENOM DE CLIENT :CIN
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :==================
+LE NOM EST       :Le
+PRENOM DE CLIENT :CIN
+SOLDE DE CLIENT  :12.000000
+==================
+CIN               :SH193097
+LE NOM EST       :SS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :21221212.000000
+==================
+CIN               :SH193097
+LE NOM EST       :SS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :21221212.000000
+==================
+CIN               :DD
+LE NOM EST       :DDD
+PRENOM DE CLIENT :DD
+SOLDE DE CLIENT  :5.000000
+==================
+CIN               :S
+LE NOM EST       :SDSD
+PRENOM DE CLIENT :DSD
+SOLDE DE CLIENT  :15.000000

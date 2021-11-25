@@ -14,8 +14,3 @@ Le CIN du client:QDD12345678
 LE Nom        :SDFGHJKL
 Le prenom     :SDFGHJKLM
 Solde         :0.000000
-==================
-Le CIN du client:AZ12345
-LE Nom        :AZERTY
-Le prenom     :QSDFGH
-Solde         :123456.000000
