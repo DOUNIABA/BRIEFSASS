@@ -89,3 +89,48 @@ CIN               :S
 LE NOM EST       :SDSD
 PRENOM DE CLIENT :DSD
 SOLDE DE CLIENT  :15.000000
+==================
+CIN               :S
+LE NOM EST       :EZE
+PRENOM DE CLIENT :EZE
+SOLDE DE CLIENT  :111.000000
+==================
+CIN               :S
+LE NOM EST       :EZE
+PRENOM DE CLIENT :EZE
+SOLDE DE CLIENT  :111.000000
+==================
+CIN               :sh1234
+LE NOM EST       :BAHA
+PRENOM DE CLIENT :DOUNIA
+SOLDE DE CLIENT  :30000.000000
+==================
+CIN               :SH
+LE NOM EST       :SS
+PRENOM DE CLIENT :SS
+SOLDE DE CLIENT  :13.000000
+==================
+CIN               :SH
+LE NOM EST       :JHGSQ
+PRENOM DE CLIENT :SDKG
+SOLDE DE CLIENT  :10.000000
+==================
+CIN               :SH
+LE NOM EST       :UIYZE
+PRENOM DE CLIENT :UJF
+SOLDE DE CLIENT  :11.000000
+==================
+CIN               :AZ
+LE NOM EST       :YJGSDH
+PRENOM DE CLIENT :FKJ
+SOLDE DE CLIENT  :154256.000000
+==================
+CIN               :SH132
+LE NOM EST       :DFUDLJK
+PRENOM DE CLIENT :DFUKH
+SOLDE DE CLIENT  :351267.000000
+==================
+CIN               :SH132
+LE NOM EST       :DFUDLJK
+PRENOM DE CLIENT :DFUKH
+SOLDE DE CLIENT  :351267.000000

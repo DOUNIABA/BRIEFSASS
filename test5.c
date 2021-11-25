@@ -62,13 +62,9 @@ p++;
         printf("\n PRENOM DE CLIENT :%s",compt[i].prenom);
         printf("\n SOLDE            :%f",compt[i].montant);
 
-    }
-    
+    }  
     }
     }  
-
-
-
   void RETRAIT_DEPOT(){
       char choix;
   char cin[20];
@@ -80,6 +76,7 @@ for(i=0; i<p; i++){
     if(strcmp(compt[i].CIN,cin)==0){
 printf("entrez solde:");
 scanf("%f",&montant);
+
 printf("pour clacluer le retrait clique qur R et D pour Depot ");
 scanf( "%s" ,&choix);
 if(choix=='R'|| choix=='r' ){
@@ -91,11 +88,9 @@ printf(" le retrait est:%f Dh\n.",compt[i].montant - montant );
 }else {
  printf("choix incorrect" );
  
- 
 }
 
     }
-
 }
   }
 
@@ -122,8 +117,7 @@ printf("\n _________________MENU______________________\n");
 printf("\n 1. ajouter un compte");
 printf("\n 2. Rechercher compte");
 printf("\n 3. afficher");
-printf("\n 4.montant()");
-printf("\n 5.retrait_depot");
+printf("\n 4.retrait_depot");
 do{
 printf("\n entre votre choix :")
 ;
@@ -144,14 +138,8 @@ afficher();
 break;
 
 case 4:
-
-break;
-
-case 5:
 RETRAIT_DEPOT();
 break;
-
-
 }
 }while(ops<1 || ops>6);
 
