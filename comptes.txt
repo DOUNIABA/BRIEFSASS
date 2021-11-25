@@ -1,5 +1,21 @@
-TESTTEST
-TEST
- 0.000000SH12345 BAHASSANE DOUNIA 30000GH312 SDFGQH YUI 31452678AZ1234 HZFTZ UDGE 364393
-FS3544 YTHF KHJDFS YITEYZ
-TZ4322 JSZ HGVSD 1642
+
+==================
+Le CIN du client              :sh1234
+LE Nom      :BAHASSANE
+Le prenom  :DOUNIA
+Solde  :30000.000000
+==================
+Le CIN du client:QG3215
+LE Nom        :AHMAD
+Le prenom     :AMAL
+Solde         :20000.000000
+==================
+Le CIN du client:QDD12345678
+LE Nom        :SDFGHJKL
+Le prenom     :SDFGHJKLM
+Solde         :0.000000
+==================
+Le CIN du client:AZ12345
+LE Nom        :AZERTY
+Le prenom     :QSDFGH
+Solde         :123456.000000

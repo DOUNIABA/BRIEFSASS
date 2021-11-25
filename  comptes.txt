@@ -1,0 +1,16 @@
+
+==================
+CIN               :SHREZA
+LE NOM EST       :QJHG
+PRENOM DE CLIENT :JHSD
+SOLDE DE CLIENT  :13415.000000
+==================
+CIN               :AZ2135
+LE NOM EST       :BAHA
+PRENOM DE CLIENT :OUMA
+SOLDE DE CLIENT  :1234.000000
+==================
+CIN               :aAZ2341
+LE NOM EST       :HSFS
+PRENOM DE CLIENT :LKSJD
+SOLDE DE CLIENT  :345617.000000

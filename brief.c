@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -9,45 +8,57 @@ char Nom[100];
 char Prenom[100];
 char Montant[100];
 };
-
 struct Comptebancaire compte[100];
 void creercompte()
-{
- 
+{ 
 for ( int i = 0;i<100;i++){
  printf("\nENTREZ CIN:");
  scanf("%s",compte[i].CIN); 
  printf("\nENTREZ LE NOM:");
  scanf("%s",compte[i].Nom);
  printf("\nENTREZ PRENOM:");
-
  scanf("%s",compte[i].Prenom); 
  printf("\nSOLDE :");
-
  scanf("%f",&compte[i].Montant);
  printf("\nBien ajouter:");
 break ;
  }
 }
-
-
    void RechercherCompte(){
     int arr[100];
     float CIN_RECH;
     int i;
     printf("Enter CIN: ");
     scanf("%s",CIN_RECH);
-
     for(i=0; i<100; i++){
     if(compte[i]==CIN_RECH){
         printf("%s",compte.CIN[i]);
         printf("%s",compte.Nom[i]);
         printf("%s",compte.Prenom[i]);
         printf("%f",compte.Montant[i]);
+    }  
+    }
 
-    }
-    
-    }
+    void AfficherCompte(){
+    FILE * C;
+    C=fopen("comptes.txt","r");
+    do{
+    printf("\n=======INFORMATIONS SUR LE COMPTE======= \n");
+    fscanf(C," %s ",compte.CIN);
+    printf("Nomero de CIN :%s \n",compte.CIN);
+    fflush(stdin);
+    fscanf(C," %s ",compte.Nom);
+    printf("Nom du client :%s\n",compte.Nom);
+    fflush(stdin);
+    fscanf(C," %s",compte.Prenom);
+    printf("Prénom de client :%s\n",compte.Prenom);
+    fflush(stdin);
+    fscanf(C," %f ",&compte.Montant);
+    printf("Montant DE COMPTE:%f Dh\n.",compte.Montant );
+    fflush(stdin);}
+    while (!feof(C));
+    fclose(C);
+}
 int main(){
 
 int choix ;
@@ -73,8 +84,7 @@ RechercherCompte()
 break;
 
 case 3:
-
-
+AfficherCompte()
 break;
 case 4:
 

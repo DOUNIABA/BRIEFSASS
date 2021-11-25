@@ -1,0 +1,26 @@
+
+==================
+Le CIN du client              :FD
+LE Nom      :DFFD
+Le prenom  :FDF
+Solde  :0.000000
+==================
+Le CIN du client              :SH1234
+LE Nom      :BAHASSANE
+Le prenom  :DOUNIA
+Solde  :30000.000000
+==================
+Le CIN du client              :sh1234
+LE Nom      :BAHASSANE
+Le prenom  :DOUNIA
+Solde  :30000.000000
+==================
+Le CIN du client              :sh1234
+LE Nom      :BAHASSANE
+Le prenom  :DOUNIA
+Solde  :30000.000000
+==================
+Le CIN du client              :sh1234
+LE Nom      :BAHASSANE
+Le prenom  :DOUNIA
+Solde  :30000.000000
